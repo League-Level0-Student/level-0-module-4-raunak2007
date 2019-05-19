@@ -6,15 +6,33 @@ void setup(){
   background(face);
 }
 void draw(){
+  background(face);
   fill(255,255,255);
   ellipse(375,250,75,75);
   ellipse(425,250,75,75);
   fill(0,0,0);
-  if(mouseX>725&&
   for(int i=0; i<100;i++){
-   
-  ellipse(mouseX+25,mouseY+25,35,35);
-  ellipse(mouseX+75,mouseY+25,35,35);
-  background(face);
-  }       
+  if(mouseY<235){
+    ellipse(mouseX,235,35,35);
+    ellipse(mouseX+50,235,35,35);
+  }if(mouseY>265){
+    ellipse(mouseX,265,35,35);
+    ellipse(mouseX+50,265,35,35);
+  }
+  if(235<mouseY&&mouseY<265){
+    ellipse(mouseX,mouseY,35,35);
+    ellipse(mouseX+50,mouseY,35,35);
+  }
+  if(mouseY<360){
+    ellipse(360,mouseY,35,35);
+    ellipse(410,mouseY,35,35);
+  }
+  if(mouseY>390){
+    ellipse(390,mouseY,35,35);
+    ellipse(440,mouseY,35,35);
+  }
+  
+  
+  
+  }  
 }
